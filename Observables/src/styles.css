@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body
+{
+    /* background: url("./assets/imagen.jpg") no-repeat; */
+    background-color: black;
+}
+
+.ngx-toastr {
+    width: 350px !important;  
+  }

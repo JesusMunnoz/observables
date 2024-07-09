@@ -1,0 +1,34 @@
+<div class = "contenido">
+    <div class = "main">
+     <div> 
+        <table class="table table-borderless">
+            <tbody>
+                <tr>
+                    <td colspan="2" align="center">
+                        <h3> Insertar un usuario</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Nombre</th>
+                    <td><input #userName required></td>
+                </tr>
+                <tr>
+                    <th scope="row">Apellidos</th>
+                    <td><input #userApps required></td>
+            </tbody>
+        </table>
+        <div class="d-grid gap-2">
+            <button type="button" 
+                    class="btn btn-outline-primary"
+                    (click) = "insertarUsuario(userName, userApps)">
+                    Insertar
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!--<h3> Borrar un usuario</h3>
+Id <input #idUser><br>
+<button type="button" (click) = "eliminarUsuario(idUser.value)">Borrar</button><br>
+<hr>-->

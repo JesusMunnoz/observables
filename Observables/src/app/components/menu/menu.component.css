@@ -1,0 +1,79 @@
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+    padding: 0;
+    margin: 0;
+  }
+   
+  /*Agregamos margenes inferiores a los parrafos*/
+  p {
+    margin-bottom: 20px;
+  }
+
+  header {
+    background: red;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    color: white;
+  }
+
+  nav {
+    float: left; /* Desplazamos el nav hacia la izquierda */
+  }
+   
+  ul 
+  {
+    float: left; /* Desplazamos el nav hacia la izquierda */
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+   
+  }
+   
+ ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+   
+  }
+   
+  ul li a 
+  { 
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    text-decoration: none; 
+    color:white;
+  } 
+   
+  ul li a:hover {
+    color: red;
+    background: black;
+    
+  } 
+
+  /* nav ul li a:visited {
+    color: red;
+    background: white;
+    
+  }  */
+
+  /*nav ul li a:link {
+    color: white;
+    background: red;
+    
+  }  */
+	
+.contenido {
+  padding-top: 80px;
+}
+
+wrapper {
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+  }
+
+.activo 
+{
+  color: red !important;
+  background: black; 
+}

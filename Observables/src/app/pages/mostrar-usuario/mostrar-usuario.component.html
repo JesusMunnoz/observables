@@ -1,0 +1,47 @@
+<div class = "contenido">
+  <div class = "user">
+    <div class = "main"> 
+      <div>
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <td colspan="2" align="center">
+                <h3> Mostrar usuario</h3>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <div class="d-grid gap-2">
+          <button type="button" 
+          class="btn btn-outline-primary"
+          (click) = "mostrarUsuario()">
+            Mostrar
+          </button>
+        </div>
+      </div>
+    </div> 
+
+    <div *ngIf="apiService.usuario!=null" class = "main">
+      <div class="col-md-8">
+        <table class="table table-bordered">
+          <tbody>
+            <tr class="sin-borde">
+              <td colspan="2" align="center" class="sin-borde">
+                <h3> Usuario</h3>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-light">Nombre</th>
+              <td>{{apiService.usuario.nombre}}</td>
+            </tr>
+            <tr>
+              <th scope="row" class="table-secondary">Apellidos</th>
+              <td>{{apiService.usuario.apellidos}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+    </div>
+  </div> 
+</div>
